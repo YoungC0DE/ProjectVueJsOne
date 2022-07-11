@@ -1,4 +1,4 @@
-# project1
+# Aprendendo a usar vue
 
 ## Project setup
 ```
