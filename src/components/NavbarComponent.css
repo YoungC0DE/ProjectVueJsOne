@@ -197,8 +197,11 @@
 
 @media (max-width: 600px) {
     .navBar {
-        height: 6vh;
+        height: 8vh;
         padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .navBar input {
@@ -207,6 +210,7 @@
 
     .containerTogglerBtn {
         width: 15%;
+        height: 80%;
     }
 
     .sideIn {
@@ -225,33 +229,35 @@
         position: relative;
         display: flex;
         width: 70%;
+        height: 80%;
     }
 
     .searchAreaMobile input {
+        position: relative;
         border-radius: 4px;
         width: 70%;
+        height: 100%;
         background-color: transparent;
         transition: .3s;
-
     }
 
     .searchAreaMobile input:focus {
         background-color: white;
         width: 100%;
-        border-color: white!important;
+        border-color: white !important;
     }
 
     .searchAreaMobile i {
         position: absolute;
         background-color: #394754ad;
-        color: white;
+        color: #fff;
         display: flex;
-        height: 86%;
         width: 20%;
+        height: 100%;
+        border-radius: 0 3px 3px 0;
+        border: 1px solid #fff;
         align-items: center;
         justify-content: center;
-        border-radius: 0px 3px 3px 0px;
-        border: 1px solid white;
     }
 
     .searchAreaMobile i:active {
