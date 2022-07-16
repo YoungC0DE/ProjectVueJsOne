@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+
+.menu-enter-from,
+.menu-leave-to {
+    transition: all .3s ease-out 0;
+}
+
+.v-enter-from,
+.v-leave-to {
+    transition: all .2s ease-out .2s;
+    opacity: 0;
+}
+
+.navBar {
+    width: 100%;
+    background-color: #0a1829;
+    height: 8vh;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    z-index: 1;
+}
+
+.navBar svg {
+    transition: none !important;
+}
+
+.searchAreaMobile,
+.searchArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchArea {
+    width: 35%;
+}
+
+.searchArea input {
+    transition: .5s;
+    background-color: #0a182900;
+    border: 1px solid white;
+    width: 50%;
+}
+
+.searchAreaMobile {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .navBar input:focus {
+        background-color: white;
+        width: 100%;
+    }
+}
+
+.sideIn {
+    width: 20% !important;
+}
+
+.sideOut {
+    width: 4% !important;
+}
+
+.navSider {
+    transition: 0.2s;
+    height: 100vh;
+    background-color: #323e51;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerTogglerBtn {
+    width: 5%;
+}
+
+#sidebarBtn:hover {
+    color: white;
+    border-color: white;
+}
+
+#sidebarBtn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebarBtn,
+#sidebarBtn svg {
+    transition: .3s;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebarBtn svg {
+    width: 75%;
+    height: 75%;
+}
+
+.userPicture {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.userPicture svg {
+    position: absolute;
+    width: 25px;
+}
+
+.userPicture img {
+    width: 100px;
+    height: 100px;
+    transition: .3s;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.userPicture img:hover {
+    opacity: .5;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.navSider .expandSideBar a {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 4px;
+    text-align: left;
+    transition: .3s;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.navSider .hideSideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.navSider .hideSideBar a {
+    position: relative;
+    padding: 15px 0;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.navSider .hideSideBar span {
+    transition: .3s;
+    display: none;
+    color: #586a85;
+    position: absolute;
+    margin-left: 120%;
+    transform: translateX(50%);
+}
+
+.navSider .hideSideBar a:hover span {
+    display: flex !important;
+}
+
+.navSider a:hover {
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+
+/* ======= responsive css */
+
+@media (max-width: 600px) {
+    .navBar {
+        height: 6vh;
+        padding: 5px 10px;
+    }
+
+    .navBar input {
+        width: 100%;
+    }
+
+    .containerTogglerBtn {
+        width: 15%;
+    }
+
+    .sideIn {
+        width: 50% !important;
+    }
+
+    .sideOut {
+        width: 0 !important;
+    }
+
+    .searchArea {
+        display: none;
+    }
+
+    .searchAreaMobile {
+        position: relative;
+        display: flex;
+        width: 70%;
+    }
+
+    .searchAreaMobile input {
+        border-radius: 4px;
+        width: 70%;
+        background-color: transparent;
+        transition: .3s;
+
+    }
+
+    .searchAreaMobile input:focus {
+        background-color: white;
+        width: 100%;
+        border-color: white!important;
+    }
+
+    .searchAreaMobile i {
+        position: absolute;
+        background-color: #394754ad;
+        color: white;
+        display: flex;
+        height: 86%;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 3px 3px 0px;
+        border: 1px solid white;
+    }
+
+    .searchAreaMobile i:active {
+        background-color: #6c757d;
+    }
+
+}
