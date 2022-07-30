@@ -1,4 +1,8 @@
-# Aprendendo a usar vue
+# template de sidebar 
+
+demo:
+![image](https://user-images.githubusercontent.com/68437256/181864578-7c025e72-387d-4517-8e4a-83d070a0a4ba.png)
+
 
 ## Project setup
 ```
